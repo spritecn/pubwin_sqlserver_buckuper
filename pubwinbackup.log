@@ -1,0 +1,68 @@
+2015-03-17 05:37:19 INFO  <module>:----------------------------------------------------
+2015-03-17 05:37:19 INFO  <module>:backup path is e:\backup
+2015-03-17 05:37:19 DEBUG  <module>:database pw is  333aaab.1
+2015-03-17 05:37:19 INFO  <module>:ftp sign on,start ftptest
+2015-03-17 05:37:19 INFO  <module>:ftp test success
+2015-03-17 05:37:19 INFO  <module>:backup time time1: 05:40
+2015-03-17 05:37:19 INFO  <module>:backup time time2: 05:50
+2015-03-17 05:40:19 INFO  <module>:backup time1 start
+2015-03-17 05:40:19 INFO  <module>:bkfilepathstr is e:\backup\db20150317_054019.dbk
+2015-03-17 05:40:19 DEBUG  backupcmdstr:osqlstr osql -U netcafe -P 333aaab.1 -d master -Q "BACKUP DATABASE LOCAL TO DISK='e:\backup\db20150317_054019.dbk'"
+2015-03-17 05:40:24 DEBUG  backup:已处理 13520 页，这些页属于数据库 'LOCAL' 的文件 'local_Data'（位于文件 1 上）。
+
+2015-03-17 05:40:24 DEBUG  backup:已处理 1 页，这些页属于数据库 'LOCAL' 的文件 'local_Log'（位于文件 1 上）。
+
+2015-03-17 05:40:24 DEBUG  backup:BACKUP DATABASE 操作成功地处理了 13521 页，花费了 4.620 秒（23.973 MB/秒）。
+
+2015-03-17 05:40:24 INFO  backup:backup success usetime:4.78099989891s
+2015-03-17 05:40:24 INFO  backup:backup end
+2015-03-17 05:40:24 INFO  <module>:zip start
+2015-03-17 05:40:33 INFO  <module>:zip success
+2015-03-17 05:40:33 INFO  <module>:delete bkfile start
+2015-03-17 05:40:33 INFO  <module>:delete e:\backup\db20150317_054019.dbk success
+2015-03-17 05:40:33 INFO  <module>:ftp update start
+2015-03-17 05:40:41 INFO  <module>:ftp update success use time 8s
+2015-03-17 05:40:41 INFO  <module>:backup time1 end
+2015-03-17 05:50:01 INFO  <module>:backup time2 start
+2015-03-17 05:50:01 INFO  <module>:bkfilepathstr is e:\backup\db20150317_055001.dbk
+2015-03-17 05:50:01 DEBUG  backupcmdstr:osqlstr osql -U netcafe -P 333aaab.1 -d master -Q "BACKUP DATABASE LOCAL TO DISK='e:\backup\db20150317_055001.dbk'"
+2015-03-17 05:50:05 DEBUG  backup:已处理 13520 页，这些页属于数据库 'LOCAL' 的文件 'local_Data'（位于文件 1 上）。
+
+2015-03-17 05:50:05 DEBUG  backup:已处理 1 页，这些页属于数据库 'LOCAL' 的文件 'local_Log'（位于文件 1 上）。
+
+2015-03-17 05:50:05 DEBUG  backup:BACKUP DATABASE 操作成功地处理了 13521 页，花费了 4.494 秒（24.645 MB/秒）。
+
+2015-03-17 05:50:05 INFO  backup:backup success usetime:4.625s
+2015-03-17 05:50:05 INFO  backup:backup end
+2015-03-17 05:50:05 INFO  <module>:zip start
+2015-03-17 05:50:14 INFO  <module>:zip success
+2015-03-17 05:50:14 INFO  <module>:delete bkfile start
+2015-03-17 05:50:14 INFO  <module>:delete e:\backup\db20150317_055001.dbk success
+2015-03-17 05:50:14 INFO  <module>:ftp update start
+2015-03-17 05:50:22 INFO  <module>:ftp update success use time 7s
+2015-03-17 05:50:22 INFO  <module>:backup time2 end
+2015-03-17 05:56:44 INFO  <module>:----------------------------------------------------
+2015-03-17 05:56:44 INFO  <module>:backup path is e:\backup
+2015-03-17 05:56:44 DEBUG  <module>:database pw is  333aaab.1
+2015-03-17 05:56:44 INFO  <module>:ftp sign on,start ftptest
+2015-03-17 05:56:44 INFO  <module>:ftp test success
+2015-03-17 05:56:44 INFO  <module>:backup time time1: 05:40
+2015-03-17 05:56:44 INFO  <module>:backup time time2: 05:50
+2015-03-18 05:57:42 INFO  <module>:------------date changed 150318---------------
+2015-03-18 05:57:42 INFO  <module>:clean backup file start
+2015-03-18 05:57:42 INFO  <module>:local backup file clean start
+2015-03-18 05:57:42 INFO  <module>:local backup file clean end
+2015-03-18 05:57:42 INFO  <module>:ftp backup file clean start
+2015-03-18 05:57:42 INFO  <module>:ftp backup file clean end
+2015-03-18 05:57:42 INFO  <module>:clean backup file end
+2015-03-19 06:00:41 INFO  <module>:------------date changed 150319---------------
+2015-03-19 06:00:41 INFO  <module>:clean backup file start
+2015-03-19 06:00:41 INFO  <module>:local backup file clean start
+2015-03-19 06:00:41 INFO  <module>:e:\backup\db20150317_054019.zip deleted
+2015-03-19 06:00:41 INFO  <module>:e:\backup\db20150317_055001.zip deleted
+2015-03-19 06:00:41 INFO  <module>:local backup file clean end
+2015-03-19 06:00:41 INFO  <module>:ftp backup file clean start
+2015-03-19 06:00:41 INFO  <module>:backup\db20150317_054019.zip deleted
+2015-03-19 06:00:41 INFO  <module>:backup\db20150317_055001.zip deleted
+2015-03-19 06:00:41 INFO  <module>:ftp backup file clean end
+2015-03-19 06:00:41 INFO  <module>:clean backup file end
